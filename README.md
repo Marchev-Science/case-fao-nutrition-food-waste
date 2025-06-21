@@ -64,19 +64,17 @@ Aim for roughly **20–30 years of data** per country (balanced where possible).
 
 ## Modeling Approach & Requirements  
 
-1. **Panel-data awareness**  
-   - Fixed/random effects, clustered errors, or lagged variables for temporal dynamics.  
-2. **Machine-learning focus** (preferred)  
+1. **Machine-learning focus** (preferred)  
    - **Ensembles** (Random Forest, XGBoost) with grouped/time-series CV.  
    - **Regularized regression** (Lasso/Ridge) for feature selection.  
    - **Recurrent models** (LSTM/GRU) optional for ambitious teams.  
-3. **Avoid tautologies**  
+2. **Avoid tautologies**  
    - Do **not** use variables definitionally tied to targets (e.g., kcal supply inside adequacy).  
-4. **Thematic feature engineering**  
+3. **Thematic feature engineering**  
    - Lag effects, per-capita conversions, supply variability, etc.  
-5. **Interpretability**  
+4. **Interpretability**  
    - Mediation analysis or importance plots to explain findings.  
-6. **Validation**  
+5. **Validation**  
    - Leave-one-country-out or time-split CV to avoid overfitting.
 
 ---
@@ -101,14 +99,6 @@ Notebook must be runnable, well-commented, and written in a clear, narrative sty
 **FAOSTAT Data Access Guide**   
   – [FAOSTAT Data Explorer](https://www.fao.org/faostat/en/#data)   
   – [FAOSTAT API root](https://fenixservices.fao.org/faostat/api/v1/en)    
-**Panel-data Tips Sheet**   
-  – [Princeton DSS “Panel Data 101” (PDF)](https://www.princeton.edu/~otorres/Panel101.pdf)   
-**Suggested ML Tools**  
-  – [XGBoost](https://xgboost.readthedocs.io/en/stable/)  
-  – [LightGBM](https://lightgbm.readthedocs.io/en/stable/)   
-  – [scikit-learn](https://scikit-learn.org/stable/)   
-  – [statsmodels](https://www.statsmodels.org/stable/)   
-  – [plm (R package)](https://cran.r-project.org/package=plm)    
 **Example Paper**
   – Todorova & Haralampiev (2024), *“What Are the Impacts of Food Losses on Nutrition?”* [Journal of Ecohumanism](https://ecohumanism.co.uk/joe/ecohumanism/article/view/4001)  
 **Domain Fact Sheets** 
